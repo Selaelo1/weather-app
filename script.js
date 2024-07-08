@@ -20,6 +20,8 @@ function refreshWeather(response) {
   getForecast(response.data.city);
 }
 
+
+
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
@@ -40,6 +42,28 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+
+function changeBody() {
+  const now = new Date();
+  const currentHour = now.getHours();
+
+   if (currentHour >= 1 && currentHour <= 12) {
+    let body = document.querySelector('body');
+     body.classList.add("body-morning")
+   }
+
+    if (currentHour >= 13 && currentHour <= 17) {
+    let body = document.querySelector('body');
+     body.classList.add("body-day")
+   }
+
+    if (currentHour >= 18 && currentHour <= 23) {
+    let body = document.querySelector('body');
+     body.classList.add("body-night")
+   }
+}
+
+changeBody();
 
 function searchCity(city) {
   let apiKey = "4d077bca814645acc0t04f0143a0ob25";
