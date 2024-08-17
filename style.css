@@ -142,14 +142,14 @@ footer {
   color: rgba(39, 33, 66, 0.4);
 }
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
   .weather-app {
     margin: 20px auto;
     padding: 20px;
   }
 
   .search-form-input {
-    width: 80%;
+    width: 65%;
   }
 
   .weather-app-data {
@@ -163,14 +163,14 @@ footer {
 
   .weather-app-temperature {
     font-size: 48px;
-  } 
+  }
 
   .weather-forecast-date {
     font-size: 14px;
   }
 
   .weather-forecast-icon {
-    font-size: 28px;
+    font-size: 10px;
   }
 
   .weather-forecast-temperatures {
@@ -194,18 +194,23 @@ footer {
 
   .weather-app-temperature {
     font-size: 38px;
-  }  
-  
+  }
+
+  .weather-forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .weather-forecast-date {
     font-size: 12px;
   }
 
-  .weather-forecast-icon {
-    font-size: 22px;
-  }
-
   .weather-forecast-temperatures {
     margin-top: 0;
+  }
+
+  .weather-forecast-icon {
+    font-size: 22px;
   }
 }
 
@@ -214,27 +219,19 @@ footer {
     width: 50%;
   }
 
-  .search-form-button{
-    width: 40%;
-    font-size: 12px;
-    text-align: center;
-
-  }
-
   .weather-app-city {
     font-size: 18px;
   }
 
   .weather-app-temperature {
     font-size: 28px;
-  }  
-  
+  }
+
   .weather-forecast-date {
     font-size: 10px;
   }
 
   .weather-forecast-icon {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
-
